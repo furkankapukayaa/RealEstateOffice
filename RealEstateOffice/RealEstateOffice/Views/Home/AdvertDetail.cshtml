@@ -1,0 +1,45 @@
+﻿@model IEnumerable<RealEstateOffice.Models.Advert>
+
+@{
+    ViewBag.Title = "AdvertDetail";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>İlan Detayı</h2>
+
+<img src="https://www.kod8.pro/img/530/16634.png" width="80%" style="border-radius: 25px; margin-left: 110px;"/>
+<br /> <br />
+
+<table class="table table-bordered">
+    <tr>
+        <th>İlan NO</th>
+        <th>İlan Adı</th>
+        <th>Firma Adı</th>
+        <th>Emlakçı Adı Soyadı</th>
+        <th>Emlakçı Adresi</th>
+        <th>Emlakçı Telefon Numarası</th>
+        <th>Emlakçı Mail Adresi</th>
+        <th>İlan Oda Sayısı</th>
+        <th>İlan Bina Yaşı</th>
+        <th>İlan Metrekaresi</th>
+        <th>İlan Kategorisi</th>
+        <th>İlan Fiyatı(₺)</th>
+    </tr>
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>@item.advert_id</td>
+            <td>@item.advert_name</td>
+            <td>@Html.DisplayFor(modelItem => item.Agent.agent_company_name)</td>
+            <td>@Html.DisplayFor(modelItem => item.Agent.agent_name_surname)</td>
+            <td>@Html.DisplayFor(modelItem => item.Agent.agent_company_address)</td>
+            <td>@Html.DisplayFor(modelItem => item.Agent.agent_company_phone)</td>
+            <td>@Html.DisplayFor(modelItem => item.Agent.agent_company_mail)</td>
+            <td>@item.number_of_rooms</td>
+            <td>@item.residance_age</td>
+            <td>@item.square_meters</td>
+            <td>@item.category</td>
+            <td>@item.price ₺</td>
+        </tr>
+    }
+</table>

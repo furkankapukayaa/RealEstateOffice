@@ -1,0 +1,80 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link href="~/Content/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" href="~/other/style.css" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontrol Paneli</title>
+</head>
+
+<body>
+
+    <div class="wrapper">
+        <div class="section">
+            <div class="top_navbar">
+                <div class="hamburger">
+                    <a href="#">
+                        <i class="fas fa-bars"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="content">
+               @RenderBody()
+            </div>
+        </div>
+        <div class="sidebar">
+            <div class="profile">
+                <img src="https://cdn-icons-png.flaticon.com/512/1177/1177568.png"
+                     alt="profile_picture">
+                <h3>@Session["agent_name_surname"]</h3>
+                <p>@Session["agent_company_name"]</p>
+            </div>
+            <ul>
+                <li>
+                    <a href="/Agent/Index">
+                        <span class="icon"><i class="fas fa-home"></i></span>
+                        <span class="item">Anasayfa</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="/Agent/MyAdvert/@Session["agent_id"]">
+                        <span class="icon"><i class="fas fa-sign"></i></span>
+                        <span class="item">İlanlarım</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="/Agent/AddAdvert">
+                        <span class="icon"><i class="fas fa-plus-square"></i></span>
+                        <span class="item">İlan Ekle</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="/Agent/Profile/@Session["agent_id"]">
+                        <span class="icon"><i class="fas fa-id-badge"></i></span>
+                        <span class="item">Profilim</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="/Login/Logout">
+                        <span class="icon"><i class="fas fa-sign-out-alt"></i></span>
+                        <span class="item">Çıkış Yap</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+    </div>
+    <script>
+        var hamburger = document.querySelector(".hamburger");
+        hamburger.addEventListener("click", function () {
+            document.querySelector("body").classList.toggle("active");
+        })
+    </script>
+</body>
+
+</html>

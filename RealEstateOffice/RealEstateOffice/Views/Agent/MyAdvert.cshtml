@@ -1,0 +1,40 @@
+﻿@model IEnumerable<RealEstateOffice.Models.Advert>
+
+@{
+    ViewBag.Title = "MyAdvert";
+    Layout = "~/Views/Shared/_LayoutAgent.cshtml";
+}
+
+<h2>İlanlarım</h2>
+
+
+
+<table class="table table-bordered">
+    <tr>
+        <th>İlan ID</th>
+        <th>Emlakçı ID</th>
+        <th>İlan Adı</th>
+        <th>İlan Oda Sayısı</th>
+        <th>İlan Bina Yaşı</th>
+        <th>İlan Metrekaresi</th>
+        <th>İlan Kategorisi</th>
+        <th>İlan Fiyatı</th>
+        <th>İlanı Güncelle</th>
+        <th>İlanı Sil</th>
+    </tr>
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>@item.advert_id</td>
+            <td>@Session["agent_company_name"] (@item.agent_id)</td>
+            <td>@item.advert_name</td>
+            <td>@item.number_of_rooms</td>
+            <td>@item.residance_age</td>
+            <td>@item.square_meters</td>
+            <td>@item.category</td>
+            <td>@item.price</td>
+            <td><a href="/Agent/UpdateAdvert/@item.advert_id" class="btn btn-info">İlanı Güncelle</a></td>
+            <td><a href="/Agent/DeleteAdvert/@item.advert_id" class="btn btn-danger" onclick="alert('İlan Silme İşlemi Yapıldı!');">İlanı Sil</a></td>
+        </tr>
+    }
+</table>

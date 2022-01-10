@@ -1,0 +1,43 @@
+﻿@model RealEstateOffice.Models.Agent
+
+@{
+    ViewBag.Title = "AddAgent";
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+
+<h2>Emlakçı Ekle</h2>
+
+@using (Html.BeginForm("AddAgent", "Admin", FormMethod.Post))
+{
+    <div class="form-group">
+        @Html.Label("Emlakçı Kullanıcı Adı")
+        @Html.TextBoxFor(x => x.agent_username, new { @required = "required", @class = "form-control" })
+        <br /> <br />
+        @Html.Label("Emlakçı Şifresi")
+        @Html.TextBoxFor(x => x.agent_password, new { @required = "required", @class = "form-control", @Value = "123456" })
+        <br /> <br />
+        @Html.Label("Emlakçı Adı Soyadı")
+        @Html.TextBoxFor(x => x.agent_name_surname, new { @required = "required", @class = "form-control" })
+        <br /> <br />
+        @Html.Label("Emlakçı Firma Adı")
+        @Html.TextBoxFor(x => x.agent_company_name, new { @required = "required", @class = "form-control" })
+        <br /> <br />
+        @Html.Label("Emlakçı Fİrma Maili")
+        @Html.TextBoxFor(x => x.agent_company_mail, new { @required = "required", @class = "form-control" })
+        <br /> <br />
+        @Html.Label("Emlakçı Firma Adresi")
+        @Html.TextBoxFor(x => x.agent_company_address, new { @required = "required", @class = "form-control" })
+        <br /> <br />
+        @Html.Label("Emlakçı Firma Telefonu")
+        @Html.TextBoxFor(x => x.agent_company_phone, new { @required = "required", @class = "form-control" })
+        <br /> <br />
+        <button class="btn btn-info" id="btn1">Kaydet</button>
+    </div>
+}
+
+<script>
+        $('#btn1').click(function () {
+            alert('Emlakçı Ekleme İşlemi Yapıldı!');
+        });
+</script>

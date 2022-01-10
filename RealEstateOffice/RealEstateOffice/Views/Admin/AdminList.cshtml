@@ -1,0 +1,27 @@
+﻿@model IEnumerable<RealEstateOffice.Models.Admin>
+
+@{
+    ViewBag.Title = "AdminList";
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+<h2>Adminler</h2>
+
+<table class="table table-bordered">
+    <tr>
+        <th>ID</th>
+        <th>Admin Kullanıcı Adı</th>
+        <th>Admin Adı Soyadı</th>
+        <th>Admin Mail</th>
+    </tr>
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>@item.admin_id</td>
+            <td>@item.admin_username</td>
+            <td>@item.admin_name_surname</td>
+            <td>@item.admin_mail</td>
+        </tr>
+    }
+</table>
+
