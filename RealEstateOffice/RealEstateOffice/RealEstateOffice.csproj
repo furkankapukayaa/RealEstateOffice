@@ -146,46 +146,6 @@
     <Compile Include="Migrations\202201080040488_admin-mail-updated.designer.cs">
       <DependentUpon>202201080040488_admin-mail-updated.cs</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\202201081103018_agent-id-test.cs" />
-    <Compile Include="Migrations\202201081103018_agent-id-test.designer.cs">
-      <DependentUpon>202201081103018_agent-id-test.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\202201081105184_agent-id-test-2.cs" />
-    <Compile Include="Migrations\202201081105184_agent-id-test-2.designer.cs">
-      <DependentUpon>202201081105184_agent-id-test-2.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\202201081106558_agent-id-test-3.cs" />
-    <Compile Include="Migrations\202201081106558_agent-id-test-3.designer.cs">
-      <DependentUpon>202201081106558_agent-id-test-3.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\202201081108186_agent-id-test-4.cs" />
-    <Compile Include="Migrations\202201081108186_agent-id-test-4.designer.cs">
-      <DependentUpon>202201081108186_agent-id-test-4.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\202201081138139_agent-id-test-5.cs" />
-    <Compile Include="Migrations\202201081138139_agent-id-test-5.designer.cs">
-      <DependentUpon>202201081138139_agent-id-test-5.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\202201081142067_agent-id-test-6.cs" />
-    <Compile Include="Migrations\202201081142067_agent-id-test-6.designer.cs">
-      <DependentUpon>202201081142067_agent-id-test-6.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\202201081146146_agent-id-test-7.cs" />
-    <Compile Include="Migrations\202201081146146_agent-id-test-7.designer.cs">
-      <DependentUpon>202201081146146_agent-id-test-7.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\202201081855160_agent-id-test-8.cs" />
-    <Compile Include="Migrations\202201081855160_agent-id-test-8.designer.cs">
-      <DependentUpon>202201081855160_agent-id-test-8.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\202201081915450_agent-id-test-9.cs" />
-    <Compile Include="Migrations\202201081915450_agent-id-test-9.designer.cs">
-      <DependentUpon>202201081915450_agent-id-test-9.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\202201091254096_default-pass.cs" />
-    <Compile Include="Migrations\202201091254096_default-pass.designer.cs">
-      <DependentUpon>202201091254096_default-pass.cs</DependentUpon>
-    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Admin.cs" />
     <Compile Include="Models\Advert.cs" />
@@ -275,36 +235,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202201080040488_admin-mail-updated.resx">
       <DependentUpon>202201080040488_admin-mail-updated.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202201081103018_agent-id-test.resx">
-      <DependentUpon>202201081103018_agent-id-test.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202201081105184_agent-id-test-2.resx">
-      <DependentUpon>202201081105184_agent-id-test-2.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202201081106558_agent-id-test-3.resx">
-      <DependentUpon>202201081106558_agent-id-test-3.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202201081108186_agent-id-test-4.resx">
-      <DependentUpon>202201081108186_agent-id-test-4.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202201081138139_agent-id-test-5.resx">
-      <DependentUpon>202201081138139_agent-id-test-5.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202201081142067_agent-id-test-6.resx">
-      <DependentUpon>202201081142067_agent-id-test-6.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202201081146146_agent-id-test-7.resx">
-      <DependentUpon>202201081146146_agent-id-test-7.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202201081855160_agent-id-test-8.resx">
-      <DependentUpon>202201081855160_agent-id-test-8.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202201081915450_agent-id-test-9.resx">
-      <DependentUpon>202201081915450_agent-id-test-9.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202201091254096_default-pass.resx">
-      <DependentUpon>202201091254096_default-pass.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
