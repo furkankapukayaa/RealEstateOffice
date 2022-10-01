@@ -5,8 +5,6 @@
     Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
 }
 
-
-
 <h2>Emlakçılar</h2>
 
 <table class="table table-bordered">
@@ -22,16 +20,16 @@
     </tr>
     @foreach (var item in Model)
     {
-        <tr>
-            <td>@item.agent_id</td>
-            <td>@item.agent_name_surname</td>
-            <td>@item.agent_username</td>
-            <td>@item.agent_company_name</td>
-            <td>@item.agent_company_mail</td>
-            <td>@item.agent_company_address</td>
-            <td>@item.agent_company_phone</td>
-            <td><a href="/Admin/DeleteAgent/@item.agent_id" class="btn btn-danger" id="btn1">Üyeliği Sil</a></td>
-        </tr>
+    <tr>
+        <td>@item.agent_id</td>
+        <td>@item.agent_name_surname</td>
+        <td>@item.agent_username</td>
+        <td>@item.agent_company_name</td>
+        <td>@item.agent_company_mail</td>
+        <td>@item.agent_company_address</td>
+        <td>@item.agent_company_phone</td>
+        <td><a href="/Admin/DeleteAgent/@item.agent_id" class="btn btn-danger" id="btn1">Üyeliği Sil</a></td>
+    </tr>
     }
 </table>
 
@@ -40,5 +38,3 @@
             alert('Emlakçı Silme İşlemi Yapıldı!');
         });
 </script>
-
-

@@ -1,17 +1,12 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using RealEstateOffice.Models;
 using System.Linq;
-using System.Web;
 using System.Web.Mvc;
-using RealEstateOffice.Models;
 
 namespace RealEstateOffice.Controllers
 {
-    
-
     public class AgentController : Controller
     {
-        dbContext c = new dbContext();
+        private dbContext c = new dbContext();
         [Authorize(Roles = "agents")]
         public ActionResult Index()
         {
@@ -21,8 +16,8 @@ namespace RealEstateOffice.Controllers
         public ActionResult MyAdvert(int id)
         {
             var advertlist = from s in c.Adverts
-                                       where s.Agent.agent_id == id
-                                       select s;
+                             where s.Agent.agent_id == id
+                             select s;
             return View(advertlist);
         }
 
@@ -41,7 +36,7 @@ namespace RealEstateOffice.Controllers
             c.SaveChanges();
             return RedirectToAction("AddAdvert");
         }
-        
+
         public ActionResult DeleteAdvert(int id)
         {
             Advert sadvert = c.Adverts.Find(id);
@@ -53,7 +48,6 @@ namespace RealEstateOffice.Controllers
         public ActionResult Profile(int id)
         {
             return View("Profile", c.Agents.Find(id));
-
         }
 
         [HttpPost]
@@ -73,7 +67,6 @@ namespace RealEstateOffice.Controllers
         public ActionResult UpdateAdvert(int id)
         {
             return View("UpdateAdvert", c.Adverts.Find(id));
-
         }
 
         [HttpPost]

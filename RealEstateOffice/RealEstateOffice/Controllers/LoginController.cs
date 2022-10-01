@@ -1,17 +1,14 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using RealEstateOffice.Models;
 using System.Linq;
-using System.Web;
-using System.Web.Security;
 using System.Web.Mvc;
-using RealEstateOffice.Models;
+using System.Web.Security;
 
 namespace RealEstateOffice.Controllers
 {
     public class LoginController : Controller
     {
-        dbContext c = new dbContext();
-        
+        private dbContext c = new dbContext();
+
         public ActionResult AdminLogin()
         {
             return View();

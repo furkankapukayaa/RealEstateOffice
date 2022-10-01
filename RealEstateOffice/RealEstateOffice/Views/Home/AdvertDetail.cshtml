@@ -7,8 +7,9 @@
 
 <h2>İlan Detayı</h2>
 
-<img src="https://www.kod8.pro/img/530/16634.png" width="80%" style="border-radius: 25px; margin-left: 110px;"/>
-<br /> <br />
+<img src="https://www.kod8.pro/img/530/16634.png" width="80%" style="border-radius: 25px; margin-left: 110px;" />
+<br />
+<br />
 
 <table class="table table-bordered">
     <tr>
@@ -27,19 +28,19 @@
     </tr>
     @foreach (var item in Model)
     {
-        <tr>
-            <td>@item.advert_id</td>
-            <td>@item.advert_name</td>
-            <td>@Html.DisplayFor(modelItem => item.Agent.agent_company_name)</td>
-            <td>@Html.DisplayFor(modelItem => item.Agent.agent_name_surname)</td>
-            <td>@Html.DisplayFor(modelItem => item.Agent.agent_company_address)</td>
-            <td>@Html.DisplayFor(modelItem => item.Agent.agent_company_phone)</td>
-            <td>@Html.DisplayFor(modelItem => item.Agent.agent_company_mail)</td>
-            <td>@item.number_of_rooms</td>
-            <td>@item.residance_age</td>
-            <td>@item.square_meters</td>
-            <td>@item.category</td>
-            <td>@item.price ₺</td>
-        </tr>
+    <tr>
+        <td>@item.advert_id</td>
+        <td>@item.advert_name</td>
+        <td>@Html.DisplayFor(modelItem => item.Agent.agent_company_name)</td>
+        <td>@Html.DisplayFor(modelItem => item.Agent.agent_name_surname)</td>
+        <td>@Html.DisplayFor(modelItem => item.Agent.agent_company_address)</td>
+        <td>@Html.DisplayFor(modelItem => item.Agent.agent_company_phone)</td>
+        <td>@Html.DisplayFor(modelItem => item.Agent.agent_company_mail)</td>
+        <td>@item.number_of_rooms</td>
+        <td>@item.residance_age</td>
+        <td>@item.square_meters</td>
+        <td>@item.category</td>
+        <td>@item.price ₺</td>
+    </tr>
     }
 </table>

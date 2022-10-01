@@ -1,15 +1,12 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using RealEstateOffice.Models;
 using System.Linq;
-using System.Web;
 using System.Web.Mvc;
-using RealEstateOffice.Models;
 
 namespace RealEstateOffice.Controllers
 {
     public class HomeController : Controller
     {
-        dbContext c = new dbContext();
+        private dbContext c = new dbContext();
         public ActionResult Index()
         {
             return View();
@@ -41,8 +38,8 @@ namespace RealEstateOffice.Controllers
         public ActionResult AdvertDetail(int id)
         {
             var advertdetail = from s in c.Adverts
-                             where s.advert_id == id
-                             select s;
+                               where s.advert_id == id
+                               select s;
             return View(advertdetail);
         }
     }

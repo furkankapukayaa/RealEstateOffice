@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel.DataAnnotations;
-using System.Linq;
-using System.Web;
+﻿using System.ComponentModel.DataAnnotations;
 
 namespace RealEstateOffice.Models
 {
@@ -18,6 +14,5 @@ namespace RealEstateOffice.Models
         public string square_meters { get; set; }
         public string category { get; set; }
         public string price { get; set; }
-        
     }
 }

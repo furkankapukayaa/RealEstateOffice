@@ -1,12 +1,9 @@
-﻿
-@{
+﻿@{
     ViewBag.Title = "Index";
     Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
 }
 
 <h1>Site İstatistikleri</h1>
-
-
 
 <table class="table table-bordered">
     <tr>
@@ -14,9 +11,9 @@
         <th>Toplam Emlakçı Sayısı</th>
         <th>Toplam İlan Sayısı</th>
     </tr>
-        <tr>
-            <td>@ViewBag.AdminCount</td>
-            <td>@ViewBag.AgentCount</td>
-            <td>@ViewBag.AdvertCount</td>
-        </tr>
+    <tr>
+        <td>@ViewBag.AdminCount</td>
+        <td>@ViewBag.AgentCount</td>
+        <td>@ViewBag.AdvertCount</td>
+    </tr>
 </table>

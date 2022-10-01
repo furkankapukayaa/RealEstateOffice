@@ -1,8 +1,7 @@
 ﻿namespace RealEstateOffice.Migrations
 {
-    using System;
     using System.Data.Entity.Migrations;
-    
+
     public partial class advertid : DbMigration
     {
         public override void Up()
@@ -14,7 +13,7 @@
             AddForeignKey("dbo.Adverts", "Agent_agent_id", "dbo.Agents", "agent_id");
             DropColumn("dbo.Agents", "Advert_advert_id");
         }
-        
+
         public override void Down()
         {
             AddColumn("dbo.Agents", "Advert_advert_id", c => c.Int());

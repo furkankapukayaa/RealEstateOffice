@@ -1,16 +1,13 @@
 ﻿using RealEstateOffice.Models;
-using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Web;
 using System.Web.Mvc;
 
 namespace RealEstateOffice.Controllers
 {
-    
     public class AdminController : Controller
     {
-        dbContext c = new dbContext();
+        private dbContext c = new dbContext();
         [Authorize(Roles = "admins")]
         public ActionResult Index()
         {
@@ -91,7 +88,6 @@ namespace RealEstateOffice.Controllers
         public ActionResult Profile(int id)
         {
             return View("Profile", c.Admins.Find(id));
-
         }
 
         [HttpPost]

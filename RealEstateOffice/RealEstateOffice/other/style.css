@@ -62,8 +62,6 @@ body {
             display: inline-block;
         }
 
-
-
         .wrapper .sidebar ul li a:hover,
         .wrapper .sidebar ul li a.active {
             color: #0c7db1;
@@ -103,8 +101,6 @@ body {
             .wrapper .section .top_navbar .hamburger a:hover {
                 color: #a2ecff;
             }
-
-
 
 body.active .wrapper .sidebar {
     left: -225px;

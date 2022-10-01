@@ -9,23 +9,23 @@
 
 @using (Html.BeginForm("Profile", "Admin", FormMethod.Post))
 {
-    <div class="form-group">
-        @Html.HiddenFor(x => x.admin_id)
+<div class="form-group">
+    @Html.HiddenFor(x => x.admin_id)
 
-        @Html.Label("Admin Kullanıcı Adı")
-        @Html.TextBoxFor(x => x.admin_username, new { @required = "required", @class = "form-control" })
-        <br /> <br />
-        @Html.Label("Admin Şifresi")
-        @Html.TextBoxFor(x => x.admin_password, new { @required = "required", @class = "form-control" })
-        <br /> <br />
-        @Html.Label("Admin Adı Soyadı")
-        @Html.TextBoxFor(x => x.admin_name_surname, new { @required = "required", @class = "form-control" })
-        <br /> <br />
-        @Html.Label("Admin Maili")
-        @Html.TextBoxFor(x => x.admin_mail, new { @required = "required", @class = "form-control" })
-        <br /> <br />
-        <button class="btn btn-info" id="btn1">Güncelle</button>
-    </div>
+    @Html.Label("Admin Kullanıcı Adı")
+    @Html.TextBoxFor(x => x.admin_username, new { @required = "required", @class = "form-control" })
+    <br /> <br />
+    @Html.Label("Admin Şifresi")
+    @Html.TextBoxFor(x => x.admin_password, new { @required = "required", @class = "form-control" })
+    <br /> <br />
+    @Html.Label("Admin Adı Soyadı")
+    @Html.TextBoxFor(x => x.admin_name_surname, new { @required = "required", @class = "form-control" })
+    <br /> <br />
+    @Html.Label("Admin Maili")
+    @Html.TextBoxFor(x => x.admin_mail, new { @required = "required", @class = "form-control" })
+    <br /> <br />
+    <button class="btn btn-info" id="btn1">Güncelle</button>
+</div>
 }
 
 <script>
