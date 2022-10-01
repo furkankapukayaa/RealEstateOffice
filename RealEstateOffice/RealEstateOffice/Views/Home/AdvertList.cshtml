@@ -5,52 +5,27 @@
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-@*<table class="table table-bordered">
-        <tr>
-            <th>İlan NO</th>
-            <th>İlan Adı</th>
-            <th>Emlakçı</th>
-            <th>İlan Oda Sayısı</th>
-            <th>İlan Bina Yaşı</th>
-            <th>İlan Metrekaresi</th>
-            <th>İlan Kategorisi</th>
-            <th>İlan Fiyatı(₺)</th>
-        </tr>
-        @foreach (var item in Model)
-        {
-            <tr>
-                <td>@item.advert_id</td>
-                <td>@item.advert_name</td>
-                <td>@Html.DisplayFor(modelItem => item.Agent.agent_company_name)</td>
-                <td>@item.number_of_rooms</td>
-                <td>@item.residance_age</td>
-                <td>@item.square_meters</td>
-                <td>@item.category</td>
-                <td>@item.price ₺</td>
-            </tr>
-        }
-    </table>*@
 <div class="text-center">
     <h2>İlanlar</h2>
     @using (Html.BeginForm())
     {
-    @Html.TextBox("SearchName", "Ara", new { @class = "form-control center-block" })
-    <br />
-    <input type="submit" value="Arama Yap" class="btn btn-info" />
-    <br />  <br />
+        @Html.TextBox("SearchName", "Ara", new { @class = "form-control center-block" })
+        <br />
+        <input type="submit" value="Arama Yap" class="btn btn-info" />
+        <br /> <br />
     }
 </div>
 
 @foreach (var item in Model)
 {
-<div class="col-sm-6">
-    <div class="thumbnail">
-        <img src="https://egitimgrafik.com/wp-content/uploads/2021/02/ev.png" width="100px">
-        <div class="caption">
-            <h3>@item.advert_name</h3>
-            <p>İlan Oda Sayısı : @item.number_of_rooms | İlan Bina Yaşı : @item.residance_age | İlan Metrekaresi : @item.square_meters m<sup>2</sup> | @item.category | İlan Fiyatı : @item.price ₺</p>
-            <p><a href="/Home/AdvertDetail/@item.advert_id" class="btn btn-primary">Detaylar...</a></p>
+    <div class="col-sm-6">
+        <div class="thumbnail">
+            <img src="https://egitimgrafik.com/wp-content/uploads/2021/02/ev.png" width="100px">
+            <div class="caption">
+                <h3>@item.advert_name</h3>
+                <p>İlan Oda Sayısı : @item.number_of_rooms | İlan Bina Yaşı : @item.residance_age | İlan Metrekaresi : @item.square_meters m<sup>2</sup> | @item.category | İlan Fiyatı : @item.price ₺</p>
+                <p><a href="/Home/AdvertDetail/@item.advert_id" class="btn btn-primary">Detaylar...</a></p>
+            </div>
         </div>
     </div>
-</div>
 }

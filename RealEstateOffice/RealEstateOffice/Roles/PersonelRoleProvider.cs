@@ -36,18 +36,18 @@ namespace RealEstateOffice.Roles
 
         public override string[] GetRolesForUser(string username)
         {
-            dbContext c = new dbContext();
+            dbContext dbContext = new dbContext();
             string agentRole = string.Empty;
             string adminRole = string.Empty;
 
-            var user = c.Admins.Where(a => a.admin_username == username).FirstOrDefault();
+            var user = dbContext.Admins.Where(a => a.admin_username == username).FirstOrDefault();
 
             if (user != null)
             {
                 adminRole = user.role;
             }
 
-            var admin = c.Agents.Where(a => a.agent_username == username).FirstOrDefault();
+            var admin = dbContext.Agents.Where(a => a.agent_username == username).FirstOrDefault();
 
             if (admin != null)
             {

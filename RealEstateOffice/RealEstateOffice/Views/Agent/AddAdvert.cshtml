@@ -9,31 +9,31 @@
 
 @using (Html.BeginForm("AddAdvert", "Agent", FormMethod.Post))
 {
-<div class="form-group">
-    @Html.Label("İlan Adı")
-    @Html.TextBoxFor(x => x.advert_name, new { @required = "required", @class = "form-control" })
-    <br /> <br />
-    @Html.Label("İlan Oda Sayısı")
-    @Html.TextBoxFor(x => x.number_of_rooms, new { @required = "required", @class = "form-control" })
-    <br /> <br />
-    @Html.Label("İlan Bina Yaşı")
-    @Html.TextBoxFor(x => x.residance_age, new { @required = "required", @class = "form-control" })
-    <br /> <br />
-    @Html.Label("İlan Metrekaresi")
-    @Html.TextBoxFor(x => x.square_meters, new { @required = "required", @class = "form-control" })
-    <br /> <br />
-    @Html.Label("İlan Kategerisi")
-    @Html.TextBoxFor(x => x.category, new { @required = "required", @class = "form-control" })
-    <br /> <br />
-    @Html.Label("İlan Fiyatı(₺)")
-    @Html.TextBoxFor(x => x.price, new { @required = "required", @class = "form-control" })
-    <br /> <br />
-    <button class="btn btn-info" id="btn1">İlanı Ekle</button>
-</div>
+    <div class="form-group">
+        @Html.Label("İlan Adı")
+        @Html.TextBoxFor(x => x.advert_name, new { @required = "required", @class = "form-control" })
+        <br /> <br />
+        @Html.Label("İlan Oda Sayısı")
+        @Html.TextBoxFor(x => x.number_of_rooms, new { @required = "required", @class = "form-control" })
+        <br /> <br />
+        @Html.Label("İlan Bina Yaşı")
+        @Html.TextBoxFor(x => x.residance_age, new { @required = "required", @class = "form-control" })
+        <br /> <br />
+        @Html.Label("İlan Metrekaresi")
+        @Html.TextBoxFor(x => x.square_meters, new { @required = "required", @class = "form-control" })
+        <br /> <br />
+        @Html.Label("İlan Kategerisi")
+        @Html.TextBoxFor(x => x.category, new { @required = "required", @class = "form-control" })
+        <br /> <br />
+        @Html.Label("İlan Fiyatı(₺)")
+        @Html.TextBoxFor(x => x.price, new { @required = "required", @class = "form-control" })
+        <br /> <br />
+        <button class="btn btn-info" id="btn1">İlanı Ekle</button>
+    </div>
 }
 
 <script>
-        $('#btn1').click(function () {
-            alert('İlan Ekleme İşlemi Yapıldı!');
-        });
+    $('#btn1').click(function () {
+        alert('İlan Ekleme İşlemi Yapıldı!');
+    });
 </script>

@@ -7,7 +7,7 @@ namespace RealEstateOffice.Controllers
 {
     public class LoginController : Controller
     {
-        private dbContext c = new dbContext();
+        private readonly dbContext dbContext = new dbContext();
 
         public ActionResult AdminLogin()
         {
@@ -17,7 +17,7 @@ namespace RealEstateOffice.Controllers
         [HttpPost]
         public ActionResult AdminLogin(Admin user)
         {
-            var info = c.Admins.FirstOrDefault(x => x.admin_username == user.admin_username && x.admin_password == user.admin_password);
+            var info = dbContext.Admins.FirstOrDefault(x => x.admin_username == user.admin_username && x.admin_password == user.admin_password);
             if (info != null)
             {
                 FormsAuthentication.SetAuthCookie(info.admin_username, false);
@@ -40,7 +40,7 @@ namespace RealEstateOffice.Controllers
         [HttpPost]
         public ActionResult AgentLogin(Agent user)
         {
-            var info = c.Agents.FirstOrDefault(x => x.agent_username == user.agent_username && x.agent_password == user.agent_password);
+            var info = dbContext.Agents.FirstOrDefault(x => x.agent_username == user.agent_username && x.agent_password == user.agent_password);
             if (info != null)
             {
                 FormsAuthentication.SetAuthCookie(info.agent_username, false);
