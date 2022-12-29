@@ -12,6 +12,7 @@ namespace RealEstateOffice
             FilterConfig.RegisterGlobalFilters(GlobalFilters.Filters);
             RouteConfig.RegisterRoutes(RouteTable.Routes);
             BundleConfig.RegisterBundles(BundleTable.Bundles);
+            RouteTable.Routes.LowercaseUrls = true;
         }
     }
 }

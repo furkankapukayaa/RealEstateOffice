@@ -289,7 +289,6 @@ C:\Users\Furkan\Desktop\RealEstateOffice\RealEstateOffice\RealEstateOffice\obj\R
 C:\Users\Furkan\Desktop\RealEstateOffice\RealEstateOffice\RealEstateOffice\obj\Release\RealEstateOffice.csproj.CopyComplete
 C:\Users\Furkan\Desktop\RealEstateOffice\RealEstateOffice\RealEstateOffice\obj\Release\RealEstateOffice.dll
 C:\Users\Furkan\Desktop\RealEstateOffice\RealEstateOffice\RealEstateOffice\obj\Release\RealEstateOffice.pdb
-C:\Users\Furkan\Desktop\Desktop\furkandev\Github Clone\RealEstateOffice\RealEstateOffice\RealEstateOffice\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
 C:\Users\Furkan\Desktop\Desktop\furkandev\Github Clone\RealEstateOffice\RealEstateOffice\RealEstateOffice\bin\RealEstateOffice.dll.config
 C:\Users\Furkan\Desktop\Desktop\furkandev\Github Clone\RealEstateOffice\RealEstateOffice\RealEstateOffice\bin\RealEstateOffice.dll
 C:\Users\Furkan\Desktop\Desktop\furkandev\Github Clone\RealEstateOffice\RealEstateOffice\RealEstateOffice\bin\RealEstateOffice.pdb
@@ -300,6 +299,7 @@ C:\Users\Furkan\Desktop\Desktop\furkandev\Github Clone\RealEstateOffice\RealEsta
 C:\Users\Furkan\Desktop\Desktop\furkandev\Github Clone\RealEstateOffice\RealEstateOffice\RealEstateOffice\bin\roslyn\csi.exe.config
 C:\Users\Furkan\Desktop\Desktop\furkandev\Github Clone\RealEstateOffice\RealEstateOffice\RealEstateOffice\bin\roslyn\csi.rsp
 C:\Users\Furkan\Desktop\Desktop\furkandev\Github Clone\RealEstateOffice\RealEstateOffice\RealEstateOffice\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\Furkan\Desktop\Desktop\furkandev\Github Clone\RealEstateOffice\RealEstateOffice\RealEstateOffice\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
 C:\Users\Furkan\Desktop\Desktop\furkandev\Github Clone\RealEstateOffice\RealEstateOffice\RealEstateOffice\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
 C:\Users\Furkan\Desktop\Desktop\furkandev\Github Clone\RealEstateOffice\RealEstateOffice\RealEstateOffice\bin\roslyn\Microsoft.CodeAnalysis.dll
 C:\Users\Furkan\Desktop\Desktop\furkandev\Github Clone\RealEstateOffice\RealEstateOffice\RealEstateOffice\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
