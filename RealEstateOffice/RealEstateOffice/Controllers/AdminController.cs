@@ -55,7 +55,8 @@ namespace RealEstateOffice.Controllers
         [HttpGet]
         public ActionResult AddAgent()
         {
-            return View();
+            var model = new Agent();
+            return View(model);
         }
 
         [HttpPost]
@@ -70,7 +71,8 @@ namespace RealEstateOffice.Controllers
         [HttpGet]
         public ActionResult AddAdmin()
         {
-            return View();
+            var model = new Admin();
+            return View(model);
         }
 
         [HttpPost]

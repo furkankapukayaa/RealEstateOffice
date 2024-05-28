@@ -25,7 +25,8 @@ namespace RealEstateOffice.Controllers
         [HttpGet]
         public ActionResult AddAdvert()
         {
-            return View();
+            var model = new Advert();
+            return View(model);
         }
 
         [HttpPost]
